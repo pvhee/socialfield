@@ -1,0 +1,34 @@
+<?php
+// $Id$
+
+/**
+ * Implementation of hook_install().
+ */
+function socialfield_install() {
+  drupal_load('module', 'content');
+  content_notify('install', 'socialfield');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function socialfield_uninstall() {
+  drupal_load('module', 'content');
+  content_notify('uninstall', 'socialfield');
+}
+
+/**
+ * Implementation of hook_enable().
+ */
+function socialfield_enable() {
+  drupal_load('module', 'content');
+  content_notify('enable', 'socialfield');
+}
+
+/**
+ * Implementation of hook_disable().
+ */
+function socialfield_disable() {
+  drupal_load('module', 'content');
+  content_notify('disable', 'socialfield');
+}

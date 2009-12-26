@@ -1,0 +1,6 @@
+; $Id$
+name = Social Field
+description = Provides an engine for modules to store social data from 3rd parties as CCK fields
+core = 6.x
+package = CCK
+dependencies[] = content
